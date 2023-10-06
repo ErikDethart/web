@@ -1,0 +1,50 @@
+:host {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    background-color: #333;
+    color: #eee;
+    align-items: center;
+}
+
+nav * {
+    padding: 8px;
+}
+
+//Navigation Bar
+@media screen and (max-width: 600px) {
+    :host {
+        flex-direction: column;
+    }
+
+    main {
+        order: -1;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+}
+
+//Navigation Rail
+@media screen and (min-width: 601px) {
+    :host {
+        flex-direction: row;
+    }
+
+    nav {
+        flex-direction: column;
+        width: fit-content;
+    }
+}
+
+main {
+    flex: 1;
+    padding: 8px;
+    background-color: #eee;
+}
