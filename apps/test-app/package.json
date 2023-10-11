@@ -4,6 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@angular/material": "16.2.6"
+    "@angular/material": "^16.2.7"
   }
 }
